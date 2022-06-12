@@ -21,8 +21,8 @@ jobs:
         uses: tj-actions/changed-files@v23
         with:
           files: |
-            rubric.json
-            rubric.md
+            rubric/rubric.json
+            rubric/rubric.md
 
       - name: Run step if any of the listed files above change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
